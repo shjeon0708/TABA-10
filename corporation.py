@@ -2,8 +2,8 @@ import requests
 import MySQLdb
 
 # API URL과 API 키
-url = 'https://api.odcloud.kr/api/3080606/v1/uddi:0168ee9b-b6a6-49e1-a299-86bfcf3a1860_201705301403'
-api_key = 'G+hiH6Oicz2xh87hlW+VtPuEOZsVuK0idUdUF3ooGnB3CMtMBx+V0mXP2HyySjN8dVRp/alF7bvi+ZdiP3YxRQ=='
+url = 'url'
+api_key = 'api_key'
 
 # API 요청
 params = {
