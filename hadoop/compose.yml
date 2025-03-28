@@ -10,7 +10,7 @@ services:
       - "9870:9870"
       - "9000:9000"
       - "8032:8032"
-    command: "/bin/bash -c 'hdfsnamenode-format && hdfsnamenode'"
+    command: "/bin/bash -c 'hdfs namenode-format && hdfs namenode'"
 
   datanode-1:
     image: test/hadoop
