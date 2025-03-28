@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+  namenode:
+    image: test/hadoop
+    platform: linux/amd64
+    container_name: namenode
+    hostname: namenode
+    ports:
+      -"9870:9870"
+      -"9000:9000"
+      -"8032:8032"
+    command: "/bin/bash -c 'hdfsnamenode-format && hdfsnamenode'"
+  datanode-1:
+    image: test/hadoop
+    platform: linux/amd64
+    container_name: datanode-1
+    hostname: datanode-1
+    ports:
+      -"9861:9864"
+      -"9001:9000"
+    command: ["hdfs", "datanode"]
+
+  datanode-2:
+    image: test/hadoop
+    platform: linux/amd64
+    container_name: datanode-2
+    hostname: datanode-2
+    ports:
+      -"9862:9864"
+      -"9002:9000"
+    command: ["hdfs", "datanode"]
+
+  datanode-3:
+    image: test/hadoop
+    platform: linux/amd64
+    container_name: datanode-3
+    hostname: datanode-3
+    ports:
+      -"9863:9864"
+      -"9003:9000"
+    command: ["hdfs", "datanode"]
