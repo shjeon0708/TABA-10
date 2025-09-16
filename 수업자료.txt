@@ -1,0 +1,15 @@
+수업자료
+https://github.com/shjeon0708/TABA-10
+TABA_MySQL_1.ppt
+
+sudo yum remove mysql*
+sudo dnf install wget
+wget https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
+sudo dnf install mysql80-community-release-el9-1.noarch.rpm
+
+sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
+sudo yum update
+sudo dnf install mysql-community-server
+
+sudo systemctl start mysqld.service
+sudo systemctl status mysqld.service
