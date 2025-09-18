@@ -1,0 +1,26 @@
+### TIBERO ENV
+export TB_BASE=/tibero
+export TB_HOME=$TB_BASE/tibero7
+export TB_SID=tibero
+export LD_LIBRARY_PATH=$TB_HOME/lib:$TB_HOME/client/lib
+export SHLIB_PATH=$LD_LIBRARY_PATH
+export LIBPATH=$LD_LIBRARY_PATH
+export PATH=$TB_HOME/bin:$TB_HOME/client/bin:$PATH
+export TB_PROF_DIR=$TB_HOME/bin/prof
+
+### TBINARY ENV
+export TBINARY_PATH=$TB_BASE/tbinary
+export PATH=$TBINARY_PATH/monitor:$PATH
+
+### TIBERO Alias
+alias tbbase="cd $TB_BASE"
+alias tbhome="cd $TB_HOME"
+alias tbcfg="cd $TB_HOME/config"
+alias tbcli="cd $TB_HOME/client"
+alias tbscr="cd $TB_HOME/scripts"
+alias tbcfgv="vi $TB_HOME/config/$TB_SID.tip"
+alias tbcliv="vi $TB_HOME/client/config/tbdsn.tbr"
+alias tblog="cd $TB_HOME/instance/$TB_SID"
+alias tbi='cd $TB_BASE/tbinary/'
+alias tm='cd $TB_BASE/tbinary/monitor;monitor;cd -'
+alias tbsql='rlwrap tbsql'
