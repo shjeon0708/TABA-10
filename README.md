@@ -1,12 +1,5 @@
 TABA 10기
 
-https://technet.tmax.co.kr/ko/front/main/main.do
+SQL 실습 구글폼
 
-tibero7 다운로드 링크
-https://naver.me/Gq9544gf
-
-rlwrap 다운
-https://naver.me/GYGVqpCa
-
-72160261@dankook.ac.kr
-
+https://docs.google.com/forms/d/e/1FAIpQLSelYh4UVSxhDub0sFYo5YsLMR3aUVStmNQEwh8FUHtd6qy7pA/viewform?usp=header
